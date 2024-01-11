@@ -105,7 +105,7 @@ main {
 }
 
 .streaming-block {
-    width: calc(100% / 6);
+    width: calc(100% / 6 - 15px);
     margin-bottom: 50px;
 }
 
@@ -153,7 +153,7 @@ main {
 
 .streaming-block-second {
 
-    width: calc(100% / 6 - 12.5px);
+    width: calc(100% / 6 - 15px);
 
 }
 
@@ -189,3 +189,9 @@ main {
 }
 
 /* End Media Player */
+
+/* Responsive */
+
+
+
+/* End Responsive */
