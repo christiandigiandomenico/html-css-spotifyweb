@@ -31,7 +31,7 @@ body {
 
 .navbar-upgrade {
     background-color: rgba(0, 0, 0, 0.4);
-    width: 100%;
+    width: calc(100% - 245px);
     height: 90px;
     position: fixed;
     z-index: 99;
@@ -42,7 +42,7 @@ body {
 }
 
 .navbar-upgrade a {
-    margin-right: 260px;
+    margin-right: 20px;
     text-decoration: none;
     color: white;
     font-size: 12px;
@@ -120,10 +120,11 @@ main {
     text-align: center;
 }
 
-.streaming-block .song-title {
+.song-title {
     color: white;
     font-size: 18px;
     margin-bottom: 15px;
+    text-align: center;
 }
 
 .streaming-block .song-subtitle {
@@ -131,8 +132,38 @@ main {
     font-size: 14px;
 }
 
-
 /* End Streaming block */
+
+/* Suggested for you */
+
+.recently-played-subtitle {
+    color: #86898d;
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+
+.streaming-block-flex-second .recently-played {
+    margin-bottom: 10px;
+}
+
+.streaming-block-second-flex {
+    display: flex;
+    gap: 15px
+}
+
+.streaming-block-second {
+
+    width: calc(100% / 6 - 12.5px);
+
+}
+
+.streaming-block-second img {
+    object-fit: cover;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+/* End suggested for you */
 
 /* End Main Section */
 
