@@ -53,7 +53,7 @@ body {
 
 main {
     background-color: #141922;
-    padding-bottom: 90px;
+    padding-bottom: 20px;
     overflow-y: scroll;
     height: calc(100vh - 90px);
 }
@@ -92,7 +92,7 @@ main {
 
 .recently-played {
     color: white;
-    font-size: 24px;
+    font-size: 26px;
     margin-bottom: 35px;
 }
 
@@ -163,7 +163,19 @@ main {
     margin-bottom: 20px;
 }
 
+.streaming-block-second-flex .song-title {
+    margin-bottom: 40px;
+}
+
 /* End suggested for you */
+
+/* Popular Artists */
+
+.popular-artists {
+    border-radius: 50%;
+}
+
+/* End Popular Artists */
 
 /* End Main Section */
 
