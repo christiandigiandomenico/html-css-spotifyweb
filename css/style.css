@@ -4,6 +4,15 @@
     box-sizing: border-box;
 }
 
+@font-face {
+    font-family: CircularSpotifyText-Medium;
+    src: url(../font/CircularSpotifyText-Medium.otf);
+}
+
+body {
+    font-family: CircularSpotifyText-Medium;
+}
+
 .general-container {
     display: flex;
 }
@@ -12,15 +21,96 @@
     width: 230px;
     height: calc(100vh - 90px);
     background-color: black;
+
+    position: fixed;
+    z-index: 99;
+}
+
+.main-container {
+    flex-grow: 1;
+    max-width: calc(100% - 230px);
 }
 
 .navbar-upgrade {
     background-color: #080b12;
-    width: calc(100vw - 230px);
+    width: 100%;
     height: 90px;
+    position: fixed;
+    z-index: 99;
 }
+
+main {
+    background-color: #141922;
+    height: 100%;
+    left: 230px;
+    position: relative;
+}
+
+/* Subtitle menu */
+
+.subtitle-menu {
+    padding-top: 110px;
+}
+
+.subtitle-menu ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.subtitle-menu ul li {
+    list-style-type: none;
+    font-size: 14px;
+    color: #86898d;
+}
+
+/* End subtitle menu */
+
+/* Main Section */
+
+.main-block-section {
+    margin-top: 45px;
+    padding-left: 20px;
+    padding-right: 30px;
+}
+
+.recently-played {
+    color: white;
+    font-size: 24px;
+    margin-bottom: 35px;
+}
+
+/* Streaming block */
+
+.streaming-block-flex {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.streaming-block {
+    width: calc(100% / 6);
+
+    /* test */
+    background-color: white;
+}
+
+/* End Streaming block */
+
+/* End Main Section */
+
+/* Media Player */
 
 .media-player {
     height: 90px;
+    width: 100%;
     background-color: #282828;
+
+    position: fixed;
+    z-index: 99;
+    bottom: 0;
+    left: 0;
+
 }
+
+/* End Media Player */
