@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.general-container {
+    display: flex;
+}
+
+.general-container nav {
+    width: 230px;
+    height: calc(100vh - 90px);
+    background-color: black;
+}
+
+.navbar-upgrade {
+    background-color: #080b12;
+    width: 100vw;
+    height: 90px;
+}
+
+.media-player {
+    height: 90px;
+    background-color: #282828;
+}
