@@ -16,7 +16,7 @@
 
 .navbar-upgrade {
     background-color: #080b12;
-    width: 100vw;
+    width: calc(100vw - 230px);
     height: 90px;
 }
 
