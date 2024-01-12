@@ -128,6 +128,7 @@ nav img {
 
 .home-search-library ul li:hover {
     color: white;
+    cursor: pointer;
 }
 
 .home-search-library ul li:hover img {
@@ -148,6 +149,11 @@ nav img {
 
 .create-playlist:hover #create-list {
     color: white;
+    cursor: pointer;
+}
+
+#playlist-container-name {
+    overflow-y: auto;
 }
 
 .create-playlist:hover #plus {
@@ -180,7 +186,8 @@ nav img {
 }
 
 .playlist-name:hover {
-    color: white
+    color: white;
+    cursor: pointer;
 }
 
 .navbar-container-bottom {
@@ -226,6 +233,7 @@ nav img {
 
 .navbar-container-bottom #app-install:hover {
     color: white;
+    cursor: pointer;
 }
 
 .app-install:hover {
@@ -268,6 +276,7 @@ nav img {
 
 .subtitle-menu ul li a:hover {
     color: white;
+    cursor: pointer;
 }
 
 .underline-green {
@@ -331,6 +340,7 @@ nav img {
 
 .streaming-overlay-container:hover .streaming-overlay {
     display: flex;
+    cursor: pointer;
 }
 
 .streaming-block img {
@@ -442,6 +452,7 @@ nav img {
 .media-player-subtitle:hover {
     color: white;
     text-decoration: underline;
+    cursor: pointer;
 }
 
 .fa-regular.fa-heart {
@@ -452,6 +463,7 @@ nav img {
 .fa-regular.fa-heart:hover,
 .fa-regular.fa-folder:hover {
     color: white;
+    cursor: pointer;
 }
 
 .media-player-buttons {
