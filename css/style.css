@@ -58,6 +58,150 @@ main {
     height: calc(100vh - 90px);
 }
 
+/* Navbar */
+
+nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.logo {
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+#mini-logo {
+    width: 30px;
+    display: none;
+}
+
+nav img {
+    width: 150px;
+}
+
+.navbar-container {
+    padding-left: 30px;
+}
+
+.home-search-library {
+    position: relative;
+}
+
+.home-search-library ul {
+    list-style-type: none;
+}
+
+.home-search-library ul li {
+    color: #a3a3a3;
+    margin-bottom: 10px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+}
+
+.home-search-library ul li:nth-of-type(3) {
+    margin-bottom: 30px;
+}
+
+.home-search-library img {
+    width: 25px;
+    margin-right: 10px;
+    filter: invert(69%) sepia(2%) saturate(22%) hue-rotate(342deg) brightness(95%) contrast(84%);
+}
+
+#left-divider {
+    height: 25px;
+    border-left: 2px solid #bdff30;
+    position: absolute;
+    right: 227px;
+}
+
+.play-list {
+    color: #a3a3a3;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.create-playlist {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+#plus {
+    display: inline;
+    color: black;
+    padding: 6px 10px;
+    font-size: 24px;
+    background-color: #a3a3a3;
+}
+
+#plus .fa-solid {
+    position: relative;
+    bottom: -2px;
+}
+
+#create-list {
+    color: #a3a3a3;
+    display: flex;
+    align-items: center;
+}
+
+.playlist-name {
+    color: #a3a3a3;
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+.navbar-container-bottom {
+    color: #a3a3a3;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.app-install {
+    font-size: 12px;
+}
+
+.app-install .fa-solid {
+    padding: 1px 3px;
+    border: 1px solid #a3a3a3;
+    border-radius: 50%;
+    font-size: 8px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.app-install-divider {
+
+    border-bottom: 1px solid #a3a3a3;
+    margin-bottom: 10px;
+
+}
+
+.navbar-container-bottom img {
+    width: 25px;
+    margin-right: 10px;
+    background-color: #808080;
+    border-radius: 50%;
+}
+
+.navbar-container-bottom span {
+    color: white;
+}
+
+.navbar-container-bottom img,
+.navbar-container-bottom .name-user-navbar {
+    vertical-align: middle;
+}
+
+.user-section {
+    margin-bottom: 10px;
+}
+
+/* Fine Navbar */
+
 /* Subtitle menu */
 
 .subtitle-menu {
@@ -191,13 +335,121 @@ main {
     width: 100%;
     background-color: #282828;
 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
 }
+
+.media-player-section-left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    height: 100%;
+    padding-left: 20px;
+
+    color: #a3a3a3;
+}
+
+.media-player-section-left img {
+    width: 50px;
+}
+
+.media-player-title {
+    color: white;
+}
+
+.media-player-subtitle {
+    font-size: 12px;
+}
+
+.fa-regular.fa-heart {
+    margin-left: 40px;
+    margin-right: 15px;
+}
+
+.media-player-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    color: white;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.fa-regular.fa-circle-play {
+    font-size: 30px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.media-player-timer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.media-timer-number {
+    color: white;
+    font-size: 10px;
+}
+
+.media-time {
+    width: 20vw;
+    height: 4px;
+    border-radius: 5px;
+    background-color: #5b5b5b;
+}
+
+.media-timer {
+    width: 8vw;
+    height: 4px;
+    border-radius: 5px;
+    background-color: #c4c4c4;
+
+}
+
+.media-player-section-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.media-player-right-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    color: white;
+    font-size: 14px;
+}
+
+.media-player-volume {
+    width: 6vw;
+    height: 4px;
+    border-radius: 5px;
+    background-color: #5b5b5b;
+    margin-right: 30px;
+}
+
+.media-player-volume-low {
+    width: 2vw;
+    height: 4px;
+    border-radius: 5px;
+    background-color: #c4c4c4;
+
+}
+
 
 /* End Media Player */
 
 /* Responsive */
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
 
     .streaming-block {
         width: calc(100% / 4 - 15px);
@@ -215,7 +467,7 @@ main {
     }
 
     .subtitle-menu ul li {
-        font-size: 12px;
+        font-size: 14px;
     }
 
     .subtitle-menu ul {
@@ -224,7 +476,7 @@ main {
 
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 768px) {
 
     .streaming-block {
         width: calc(100% / 2 - 15px);
@@ -237,23 +489,36 @@ main {
     }
 
     .subtitle-menu ul li {
-        font-size: 12px;
+        font-size: 14px;
     }
 
     .streaming-block {
         margin-bottom: 0px;
     }
 
+    .media-player-left-icons {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-left: 20px;
+    }
+
+    .fa-regular.fa-heart {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 576px) {
 
     .general-container nav {
         width: 50px;
     }
 
     .subtitle-menu ul li {
-        font-size: 10px;
+        font-size: 14px;
     }
 
     main {
@@ -262,6 +527,75 @@ main {
 
     .navbar-upgrade {
         width: calc(100% - 50px);
+    }
+
+    .navbar-container {
+        padding: 0px 10px;
+    }
+
+    #left-divider {
+        display: none;
+    }
+
+    .logo img {
+        display: none;
+    }
+
+    #mini-logo {
+        display: block;
+    }
+
+    .home-search-library span {
+        display: none;
+    }
+
+    .home-search-library img {
+        margin-right: 0px;
+        margin: auto;
+    }
+
+    .play-list-container {
+        display: none;
+    }
+
+    .navbar-container-bottom {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .app-install-divider {
+        display: none;
+    }
+
+    .app-install {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .app-install .fa-solid {
+        margin-right: 0px;
+    }
+
+    .navbar-container-bottom span {
+        display: none;
+    }
+
+    .navbar-container-bottom img {
+        margin-right: 0px;
+    }
+
+    .user-section {
+        text-align: center;
+    }
+
+    .media-player-left-icons {
+        margin-left: 10px;
+        margin-right: 20px;
+    }
+
+    .media-player-section-center {
+        margin-right: 20px;
     }
 
 }

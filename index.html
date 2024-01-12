@@ -6,7 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spotify</title>
     <link rel="stylesheet" href="css/style.css">
+
+    <!-- Favicon -->
     <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+
+    <!-- Font awesome -->
+    <script src="https://kit.fontawesome.com/1ad8417259.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -14,6 +19,73 @@
     <div class="general-container">
 
         <nav>
+
+            <div class="navbar-container">
+
+                <div class="logo">
+                    <img id="mini-logo" src="./img/logo-small.svg">
+
+                    <img src="./img/logo.svg">
+                </div>
+
+                <div class="home-search-library">
+                    <ul>
+                        <li>
+                            <span id="left-divider"></span><img id="home-search-first" src="./img/home.svg">
+                            <span>Home</span>
+                        </li>
+                        <li>
+                            <img src="./img/search.svg"> <span>Cerca</span>
+                        </li>
+                        <li>
+                            <img src="./img/libreria.svg"> <span>La tua libreria</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="play-list-container">
+
+                    <div class="play-list">
+                        PLAYLIST
+                    </div>
+
+                    <div class="create-playlist">
+
+                        <div id="plus">
+                            <i class="fa-solid fa-plus"></i>
+                        </div>
+
+                        <div id="create-list">
+                            Crea Playlist
+                        </div>
+
+                    </div>
+
+                    <div class="playlist-name">Nome Playlist</div>
+                    <div class="playlist-name">Nome Playlist</div>
+                    <div class="playlist-name">Nome Playlist</div>
+                    <div class="playlist-name">Nome Playlist</div>
+                    <div class="playlist-name">Nome Playlist</div>
+                    <div class="playlist-name">Nome Playlist</div>
+                    <div class="playlist-name">Nome Playlist</div>
+
+                </div>
+
+            </div>
+
+            <div class="navbar-container-bottom">
+
+                <div class="app-install">
+                    <i class="fa-solid fa-arrow-down"></i> <span>Installa app</span>
+                </div>
+
+                <div class="app-install-divider"></div>
+
+                <div class="user-section">
+                    <img src="./img/profile.svg"> <span class="name-user-navbar">John Doe</span>
+                </div>
+
+            </div>
 
         </nav>
 
@@ -196,6 +268,81 @@
     </div>
 
     <div class="media-player">
+
+        <div class="media-player-section-left">
+
+            <img src="./img/sinister.jpeg">
+
+            <div class="media-player-left-title-section">
+                <div class="media-player-title">Sinister</div>
+                <div class="media-player-subtitle">Brano Nome</div>
+            </div>
+
+            <div class="media-player-left-icons">
+                <i class="fa-regular fa-heart"></i> <i class="fa-regular fa-folder"></i>
+            </div>
+
+        </div>
+
+        <div class="media-player-section-center">
+
+            <div class="media-player-buttons">
+
+                <i class="fa-solid fa-shuffle"></i>
+
+                <i class="fa-solid fa-backward-step"></i>
+
+                <i class="fa-regular fa-circle-play"></i>
+
+                <i class="fa-solid fa-forward-step"></i>
+
+                <i class="fa-solid fa-arrow-rotate-right"></i>
+
+            </div>
+
+            <div class="media-player-timer">
+
+                <div class="media-timer-number">
+                    0:25
+                </div>
+
+                <div class="media-time">
+
+                    <div class="media-timer">
+
+                    </div>
+
+                </div>
+
+                <div class="media-timer-number">
+                    4:35
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="media-player-section-right">
+
+            <div class="media-player-right-icons">
+
+                <i class="fa-solid fa-bars"></i>
+
+                <i class="fa-solid fa-display"></i>
+
+                <i class="fa-solid fa-volume-high"></i>
+
+            </div>
+
+            <div class="media-player-volume">
+
+                <div class="media-player-volume-low">
+
+                </div>
+
+            </div>
+
+        </div>
 
     </div>
 
