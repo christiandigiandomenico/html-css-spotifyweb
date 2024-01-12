@@ -29,6 +29,8 @@ body {
     max-width: calc(100% - 230px);
 }
 
+/* Navbar Upgrade */
+
 .navbar-upgrade {
     background-color: rgba(0, 0, 0, 0.4);
     width: calc(100% - 230px);
@@ -49,7 +51,14 @@ body {
     border: 1px solid white;
     padding: 15px 50px;
     border-radius: 25px;
+    transition: ease;
 }
+
+.navbar-upgrade a:hover {
+    transform: scale(1.1);
+}
+
+/* End Navbar upgrade */
 
 main {
     background-color: #141922;
@@ -117,6 +126,14 @@ nav img {
     right: 227px;
 }
 
+.home-search-library ul li:hover {
+    color: white;
+}
+
+.home-search-library ul li:hover img {
+    filter: invert(0);
+}
+
 .play-list {
     color: #a3a3a3;
     font-size: 14px;
@@ -127,6 +144,14 @@ nav img {
     display: flex;
     gap: 10px;
     margin-bottom: 30px;
+}
+
+.create-playlist:hover #create-list {
+    color: white;
+}
+
+.create-playlist:hover #plus {
+    background-color: white;
 }
 
 #plus {
@@ -152,6 +177,10 @@ nav img {
     color: #a3a3a3;
     margin-bottom: 15px;
     font-size: 14px;
+}
+
+.playlist-name:hover {
+    color: white
 }
 
 .navbar-container-bottom {
@@ -191,6 +220,18 @@ nav img {
     color: white;
 }
 
+.navbar-container-bottom #app-install {
+    color: #a3a3a3;
+}
+
+.navbar-container-bottom #app-install:hover {
+    color: white;
+}
+
+.app-install:hover {
+    color: white;
+}
+
 .navbar-container-bottom img,
 .navbar-container-bottom .name-user-navbar {
     vertical-align: middle;
@@ -222,6 +263,11 @@ nav img {
 .subtitle-menu ul li a {
     color: #86898d;
     text-decoration: none;
+    transition: ease;
+}
+
+.subtitle-menu ul li a:hover {
+    color: white;
 }
 
 .underline-green {
@@ -364,9 +410,19 @@ nav img {
     font-size: 12px;
 }
 
+.media-player-subtitle:hover {
+    color: white;
+    text-decoration: underline;
+}
+
 .fa-regular.fa-heart {
     margin-left: 40px;
     margin-right: 15px;
+}
+
+.fa-regular.fa-heart:hover,
+.fa-regular.fa-folder:hover {
+    color: white;
 }
 
 .media-player-buttons {
@@ -402,6 +458,7 @@ nav img {
     height: 4px;
     border-radius: 5px;
     background-color: #5b5b5b;
+    position: relative;
 }
 
 .media-timer {
@@ -411,6 +468,28 @@ nav img {
     background-color: #c4c4c4;
 
 }
+
+.media-timer-knob {
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    background-color: white;
+
+    position: absolute;
+    bottom: -4px;
+    left: 145px;
+
+    display: none;
+}
+
+.media-time:hover .media-timer {
+    background-color: #bdff30;
+}
+
+.media-time:hover .media-timer-knob {
+    display: block;
+}
+
 
 .media-player-section-right {
     display: flex;
@@ -434,6 +513,7 @@ nav img {
     border-radius: 5px;
     background-color: #5b5b5b;
     margin-right: 30px;
+    position: relative;
 }
 
 .media-player-volume-low {
@@ -442,6 +522,27 @@ nav img {
     border-radius: 5px;
     background-color: #c4c4c4;
 
+}
+
+.media-player-volume-knob {
+    height: 11px;
+    width: 11px;
+    border-radius: 50%;
+    background-color: white;
+
+    position: absolute;
+    bottom: -4px;
+    left: 30px;
+
+    display: none;
+}
+
+.media-player-volume:hover .media-player-volume-low {
+    background-color: #bdff30;
+}
+
+.media-player-volume:hover .media-player-volume-knob {
+    display: block;
 }
 
 
