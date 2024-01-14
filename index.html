@@ -363,7 +363,7 @@
 
                 <i class="fa-solid fa-backward-step"></i>
 
-                <i class="fa-regular fa-circle-play"></i>
+                <i onclick="myFunction()" class="fa-regular fa-circle-play"></i>
 
                 <i class="fa-solid fa-forward-step"></i>
 
@@ -424,6 +424,13 @@
         </div>
 
     </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        function myFunction() {
+            document.querySelector(".media-timer").style.width = "20vw";
+        }
+    </script>
 
 </body>
 

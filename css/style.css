@@ -528,24 +528,30 @@ nav img {
 }
 
 .media-timer {
-    width: 8vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0vw;
     height: 4px;
     border-radius: 5px;
     background-color: #c4c4c4;
 
+    transition: width 100s linear;
+
 }
 
 .media-timer-knob {
-    height: 12px;
-    width: 12px;
-    border-radius: 50%;
-    background-color: white;
 
+    opacity: 0;
+    width: 10px;
+    height: 10px;
     position: absolute;
-    bottom: -4px;
-    left: 145px;
+    background-color: white;
+    border-radius: 50%;
+    transform: translateY(-50%);
+    top: 2px;
+    left: 0;
 
-    display: none;
 }
 
 .media-time:hover .media-timer {
@@ -553,7 +559,7 @@ nav img {
 }
 
 .media-time:hover .media-timer-knob {
-    display: block;
+    opacity: 1;
 }
 
 
