@@ -84,6 +84,7 @@ body {
 /* End Navbar upgrade */
 
 main {
+    background-image: linear-gradient(#523b9f, #1f173d, #15131d, #121212);
     background-color: #141922;
     padding-bottom: 20px;
     overflow-y: scroll;
