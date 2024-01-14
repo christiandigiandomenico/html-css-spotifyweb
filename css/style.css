@@ -154,6 +154,7 @@ nav img {
 
 #playlist-container-name {
     overflow-y: auto;
+    height: 150px;
 }
 
 .create-playlist:hover #plus {
