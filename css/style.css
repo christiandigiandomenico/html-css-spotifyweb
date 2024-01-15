@@ -97,6 +97,8 @@ nav {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
+    overflow: hidden;
 }
 
 .logo {
@@ -650,10 +652,6 @@ nav img {
         left: 10px;
     }
 
-    .media-timer-knob {
-        left: 75px;
-    }
-
 
 }
 
@@ -692,10 +690,6 @@ nav img {
 
     .media-player-volume-knob {
         left: 10px;
-    }
-
-    .media-timer-knob {
-        left: 55px;
     }
 
 
@@ -790,10 +784,6 @@ nav img {
 
     .media-player-volume-knob {
         left: 10px;
-    }
-
-    .media-timer-knob {
-        left: 40px;
     }
 
 }
